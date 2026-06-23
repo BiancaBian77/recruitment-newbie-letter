@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>给招聘运营新人的一封信</title>
+  <title>招聘运营新人 Landing · 从执行者到操盘手</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -14,19 +14,13 @@
       --text-muted: #a39e98;
       --blue: #0075de;
       --blue-light: #f2f9ff;
-      --blue-dark: #005bab;
       --border: rgba(0,0,0,0.1);
       --red-soft: #fdf2f2;
       --green-soft: #f2fdf5;
       --radius: 12px;
-      --radius-sm: 4px;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Inter', -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -34,77 +28,63 @@
       background: var(--bg);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
 
-    /* ===== Typography ===== */
     h1 {
       font-size: 2.25rem;
       font-weight: 700;
       letter-spacing: -0.04em;
       line-height: 1.15;
-      color: var(--text);
     }
-
     h2 {
       font-size: 1.5rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       line-height: 1.3;
-      color: var(--text);
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
-
     h3 {
       font-size: 1.125rem;
       font-weight: 600;
-      letter-spacing: -0.01em;
-      line-height: 1.4;
-      color: var(--text);
       margin-top: 1.75rem;
       margin-bottom: 0.5rem;
     }
-
     p {
       font-size: 1rem;
-      font-weight: 400;
       line-height: 1.7;
-      color: var(--text);
       margin-bottom: 1rem;
     }
+    strong { font-weight: 600; }
 
-    /* ===== Layout ===== */
-    header {
-      padding: 4rem 1.5rem 3rem;
+    /* Layout */
+    .hero {
+      padding: 5rem 1.5rem 3rem;
       max-width: 680px;
       margin: 0 auto;
+      text-align: center;
     }
-
-    header .byline {
-      font-size: 0.875rem;
-      color: var(--text-muted);
-      margin-top: 0.5rem;
+    .hero h1 { margin-bottom: 1rem; }
+    .hero .subtitle {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      max-width: 520px;
+      margin: 0 auto;
     }
-
     main {
       max-width: 680px;
       margin: 0 auto;
       padding: 0 1.5rem 4rem;
     }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    /* ===== Divider ===== */
+    section { margin-bottom: 2rem; }
     hr {
       border: none;
       border-top: 1px solid var(--border);
       margin: 2.5rem 0;
     }
 
-    /* ===== Cards ===== */
+    /* Cards */
     .card {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -113,20 +93,18 @@
       margin: 1rem 0;
       box-shadow: rgba(0,0,0,0.02) 0px 2px 8px, rgba(0,0,0,0.01) 0px 0.5px 2px;
     }
-
     .card-warm {
       background: var(--bg-warm);
       border: none;
     }
-
     .card-blue {
       background: var(--blue-light);
       border: 1px solid rgba(0,117,222,0.15);
     }
 
-    /* ===== Scenario Blocks ===== */
+    /* Scenarios */
     .scenario {
-      margin: 1.25rem 0;
+      margin: 1rem 0;
       padding: 1.25rem 1.5rem;
       border-radius: var(--radius);
       border: 1px solid var(--border);
@@ -149,11 +127,8 @@
     .scenario-label.bad { color: #c53030; }
     .scenario-label.good { color: #276749; }
 
-    /* ===== Table ===== */
-    .table-wrap {
-      overflow-x: auto;
-      margin: 1rem 0;
-    }
+    /* Table */
+    .table-wrap { overflow-x: auto; margin: 1rem 0; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -167,7 +142,6 @@
       border-bottom: 1px solid var(--border);
       font-size: 0.8125rem;
       color: var(--text-secondary);
-      white-space: nowrap;
     }
     td {
       padding: 0.75rem 1rem;
@@ -175,25 +149,19 @@
       vertical-align: top;
       line-height: 1.5;
     }
-    tr:last-child td {
-      border-bottom: none;
-    }
+    tr:last-child td { border-bottom: none; }
 
-    /* ===== Quote ===== */
+    /* Blockquote */
     blockquote {
       border-left: 3px solid var(--blue);
       padding: 0.75rem 1.25rem;
       margin: 1.5rem 0;
       background: var(--blue-light);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      border-radius: 0 4px 4px 0;
     }
-    blockquote p {
-      margin: 0;
-      font-weight: 500;
-      color: var(--text);
-    }
+    blockquote p { margin: 0; font-weight: 500; }
 
-    /* ===== Practice Box ===== */
+    /* Practice box */
     .practice-box {
       background: var(--bg);
       border: 1.5px solid var(--blue);
@@ -201,10 +169,7 @@
       padding: 1.75rem;
       margin: 2rem 0;
     }
-    .practice-box h3 {
-      margin-top: 0;
-      color: var(--blue);
-    }
+    .practice-box h3 { margin-top: 0; color: var(--blue); }
     .practice-box pre {
       background: var(--bg-warm);
       padding: 1.25rem;
@@ -213,39 +178,63 @@
       font-size: 0.8125rem;
       line-height: 1.7;
       overflow-x: auto;
-      color: var(--text);
     }
 
-    /* ===== Resource links ===== */
-    .resource-list {
-      list-style: none;
-      padding: 0;
-    }
-    .resource-list li {
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--border);
+    /* Resources */
+    .resource-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin: 0.75rem 0;
       display: flex;
-      align-items: baseline;
-      gap: 0.75rem;
+      gap: 1rem;
+      align-items: flex-start;
     }
-    .resource-list li:last-child {
-      border-bottom: none;
-    }
-    .resource-list .num {
-      font-size: 0.875rem;
+    .resource-card .num {
+      font-size: 0.8125rem;
       font-weight: 600;
       color: var(--text-muted);
-      min-width: 1.5rem;
+      min-width: 2rem;
+      padding-top: 0.125rem;
     }
-    .resource-list .title {
+    .resource-card .info { flex: 1; }
+    .resource-card .title {
       font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
     }
-    .resource-list .desc {
+    .resource-card .desc {
       font-size: 0.875rem;
       color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .resource-card .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .resource-card .links a {
+      font-size: 0.8125rem;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      background: var(--blue-light);
+      transition: background 0.15s;
+    }
+    .resource-card .links a:hover {
+      background: rgba(0,117,222,0.15);
+      text-decoration: none;
     }
 
-    /* ===== Footer ===== */
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .highlight {
+      background: linear-gradient(180deg, transparent 60%, rgba(0,117,222,0.15) 60%);
+    }
+
     footer {
       max-width: 680px;
       margin: 0 auto;
@@ -259,160 +248,137 @@
       margin: 0;
     }
 
-    /* ===== Emphasis ===== */
-    strong {
-      font-weight: 600;
-      color: var(--text);
-    }
-    a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .highlight {
-      background: linear-gradient(180deg, transparent 60%, rgba(0,117,222,0.15) 60%);
-    }
-
-    /* ===== Responsive ===== */
     @media (max-width: 600px) {
       h1 { font-size: 1.75rem; }
       h2 { font-size: 1.25rem; margin-top: 2rem; }
-      header { padding: 2.5rem 1rem 1.5rem; }
+      .hero { padding: 3rem 1rem 2rem; }
       main { padding: 0 1rem 3rem; }
       .scenario { padding: 1rem; }
       td, th { padding: 0.5rem 0.75rem; font-size: 0.8125rem; }
+      .resource-card { flex-direction: column; gap: 0.5rem; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>给招聘运营新人的一封信</h1>
-  <p class="byline">卞卡 · 2026 年 6 月</p>
-</header>
+<div class="hero">
+  <h1>招聘运营新人 Landing</h1>
+  <p class="subtitle">从「执行者」到「操盘手」——训练你的 WHY 思维，建立职业基本功</p>
+</div>
 
 <main>
 
-<!-- ===== INTRO ===== -->
-<section>
-  <h2>先说说为什么给你看这些</h2>
-
-  <p>不是因为你做得不好。</p>
-
-  <p>是因为我刚入行的时候，最遗憾的事情就是——<strong>没人告诉我「为什么要做一件事」，大家都只告诉我「怎么做」。</strong></p>
-
-  <p>于是前两年我做了很多事，很忙，但回头看，大部分是<strong>正确但没用的</strong>。</p>
-
-  <p>招聘运营这个岗位尤其容易掉进这个坑：事情多、节奏快、协作方杂，很容易变成「发 JD 机器人」「约面工具人」。所以我希望你从一开始就养成一个习惯——</p>
-
-  <blockquote>
-    <p>动手之前，先想三秒。</p>
-  </blockquote>
-
-  <p>下面这些，是我希望当年有人告诉我的事。</p>
-</section>
-
-<hr>
-
 <!-- ===== PART 1: WHY ===== -->
 <section>
-  <h2>第一部分：训练你的 WHY 肌肉</h2>
+  <h2>训练你的 WHY 肌肉</h2>
 
-  <h3>为什么「为什么要做」这么重要？</h3>
+  <p>招聘运营天然容易掉进一个坑：事情多、节奏快、协作方杂，一不小心就变成「发 JD 机器人」「约面工具人」。每天很忙，但回头看，很多事是<strong>正确但没用的</strong>。</p>
 
-  <p>举个例子你就懂了。假设 leader 在群里说：<strong>「把这个岗位的 JD 优化一下，发到 Boss 直聘上」</strong></p>
+  <p>核心差别在哪儿？——<strong>动手之前，有没有多想三秒：为什么要做这件事？</strong></p>
+
+  <h3>同一个任务，多想一步就不一样</h3>
+
+  <p>假设 leader 在群里说：<strong>「把这个岗位的 JD 优化一下，发到 Boss 直聘上」</strong></p>
 
   <div class="scenario scenario-bad">
-    <div class="scenario-label bad">❌ 没有 WHY 思维的人</div>
+    <div class="scenario-label bad">❌ 没有 WHY 思维</div>
     <p style="margin:0.25rem 0 0 0;">打开 JD，改改措辞，发出去，回一句「已发」。完成。</p>
   </div>
 
-  <div class="scenario scenario-good" style="margin-top:0.75rem;">
-    <div class="scenario-label good">✅ 有 WHY 思维的人多想了几步</div>
+  <div class="scenario scenario-good">
+    <div class="scenario-label good">✅ 有 WHY 思维</div>
     <ul style="margin:0.25rem 0 0 0; padding-left:1.25rem; font-size:0.9375rem; line-height:1.7;">
       <li>「为什么要优化 JD？」——是不是收简历量不够？还是投递的人不对？</li>
       <li>「为什么是 Boss 直聘？」——这个岗位的目标人群在哪个平台更活跃？</li>
-      <li>「什么叫优化好了？」——改完以后，用什么指标判断效果？</li>
+      <li>「什么叫优化好了？」——改完以后用什么指标判断效果？</li>
     </ul>
   </div>
 
-  <p style="margin-top:1.25rem;">你看，<strong>同一件事，后者做的才叫「运营」，前者叫「操作」。</strong></p>
+  <p style="margin-top:1.25rem;">同一件事，前者叫「操作」，后者才叫「运营」。</p>
 
-  <h3>你的日常场景里，多问一句话的区别</h3>
+  <h3>你的日常场景</h3>
 
   <p><strong>场景一：让你拉一份招聘数据</strong></p>
-  <p>❌ 直接导出数据，做张表发过去。</p>
-  <p>✅ 先想：对方想看什么？是漏斗哪个环节出问题了？是某个面试官效率低？还是某个岗位渠道不对？<strong>想清楚再拉，数据自然就有重点了。</strong></p>
+  <p>❌ 直接导出数据，做张表发过去。<br>
+  ✅ 先想：对方想看什么？漏斗哪个环节出问题了？某个面试官效率低？某个渠道不对？<strong>想清楚再拉，数据自然有重点。</strong></p>
 
   <p><strong>场景二：让你联系一个候选人</strong></p>
-  <p>❌ 复制粘贴话术发过去。</p>
-  <p>✅ 先花 30 秒看看他的简历：他现在的公司/岗位是什么？他可能关心什么？你的第一句话能不能让他觉得「这个人真的有看我的背景」而不是群发？</p>
+  <p>❌ 复制粘贴话术发过去。<br>
+  ✅ 先花 30 秒看他的简历：他现在的公司/岗位是什么？他可能关心什么？第一句话能不能让他觉得你真有看他的背景？</p>
 
   <p><strong>场景三：面试官三天没给反馈</strong></p>
-  <p>❌ 又去催一遍：「麻烦尽快给反馈哈」。</p>
-  <p>✅ 想想面试官为什么卡住了：是太忙没看到？是候选人表现有争议不好下结论？是系统不好用？<strong>针对原因去解决，比反复催有效十倍。</strong></p>
+  <p>❌ 又去催一遍：「麻烦尽快给反馈哈」。<br>
+  ✅ 想想为什么卡住了：太忙没看到？候选人表现有争议？系统不好用？<strong>针对原因去解决，比反复催有效十倍。</strong></p>
 </section>
 
 <hr>
 
-<!-- ===== RECOMMENDED RESOURCES ===== -->
+<!-- ===== RESOURCES ===== -->
 <section>
-  <h2>推荐深入学习的资料</h2>
+  <h2>推荐学习资料</h2>
 
-  <ul class="resource-list">
-    <li>
-      <span class="num">01</span>
-      <div>
-        <div class="title">Simon Sinek《Start With Why》TED 演讲</div>
-        <div class="desc">18 分钟，最轻量的入口。核心就一句：厉害的人做事从 Why 出发。</div>
-        <a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action" target="_blank">观看 TED →</a>
+  <div class="resource-card">
+    <span class="num">01</span>
+    <div class="info">
+      <div class="title">Simon Sinek《Start With Why》TED 演讲</div>
+      <div class="desc">18 分钟，最轻量的入口。核心就一句：厉害的人做事从 Why 出发，普通人从 What 出发。</div>
+      <div class="links">
+        <a href="https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action" target="_blank">TED 官方</a>
+        <a href="https://www.bilibili.com/video/BV1Kx41117Tw" target="_blank">B站双语字幕</a>
       </div>
-    </li>
-    <li>
-      <span class="num">02</span>
-      <div>
-        <div class="title">芭芭拉·明托《金字塔原理》前四章</div>
-        <div class="desc">不是让你从头啃，就看前四章。它教你怎么把「想清楚了」变成「说清楚了」——跟面试官、候选人、leader 沟通，谁能一句话讲清重点，谁就赢。</div>
+    </div>
+  </div>
+
+  <div class="resource-card">
+    <span class="num">02</span>
+    <div class="info">
+      <div class="title">芭芭拉·明托《金字塔原理》</div>
+      <div class="desc">麦肯锡 40 年经典。前四章就够：教你怎么把「想清楚了」变成「说清楚了」。对招聘运营特别重要——你跟面试官、候选人、leader 沟通，谁能一句话讲清重点，谁就赢。</div>
+      <div class="links">
+        <a href="https://book.douban.com/subject/1020644/" target="_blank">豆瓣</a>
+        <a href="https://weread.qq.com/web/bookDetail/48c323a071f6e4a048c5d7b" target="_blank">微信读书</a>
       </div>
-    </li>
-    <li>
-      <span class="num">03</span>
-      <div>
-        <div class="title">大石哲之《靠谱：顶尖咨询师教你的工作基本功》</div>
-        <div class="desc">日本人写的，每章 10 分钟读完一篇。刚好对应你每天遇到的「小事怎么做才算靠谱」：怎么确认需求、怎么汇报进展、怎么回应leader说的「你再想想」。</div>
+    </div>
+  </div>
+
+  <div class="resource-card">
+    <span class="num">03</span>
+    <div class="info">
+      <div class="title">大石哲之《靠谱：顶尖咨询师教你的工作基本功》</div>
+      <div class="desc">每章 10 分钟读完一篇，全是具体场景：怎么确认需求、怎么汇报进展、怎么回应「你再想想」。适合每天通勤翻一篇。</div>
+      <div class="links">
+        <a href="https://book.douban.com/subject/26963256/" target="_blank">豆瓣</a>
+        <a href="https://weread.qq.com/web/bookDetail/1c132d20718f9a041c16852" target="_blank">微信读书</a>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 </section>
 
 <hr>
 
-<!-- ===== PART 2: COMMON SENSE ===== -->
+<!-- ===== PART 2: BASICS ===== -->
 <section>
-  <h2>第二部分：那些不会有人专门教你的事</h2>
+  <h2>职场基本功：那些不会有人专门教你的事</h2>
 
   <h3>1. 让人觉得「事情交给你放心」</h3>
 
   <p>新人最大的资本不是能力，是<strong>可预期</strong>。</p>
 
   <div class="card card-warm">
-    <p style="margin:0;"><strong>接到任务 10 分钟内说：</strong>「收到，预计明天下午 3 点前给你初版」。<br>不需要立刻做完，但需要立刻让对方知道你会做。</p>
+    <p style="margin:0;"><strong>接到任务 10 分钟内说：</strong>「收到，预计明天下午 3 点前给你初版」。不需要立刻做完，但需要立刻让对方知道你会做。</p>
     <p style="margin:0.75rem 0 0 0;"><strong>做不完，提前说。</strong>不要等 deadline 过了才解释。这是最容易被低估的职场信用。</p>
     <p style="margin:0.75rem 0 0 0;"><strong>交东西前过一遍：</strong>如果我是对方，打开这个文档第一眼看到的是我最想看到的吗？</p>
   </div>
 
   <h3>2. 招聘运营的沟通分寸</h3>
-  <p>你的工作跟三类人打交道，每一类需要的方式不一样：</p>
+  <p>你的工作跟三类人打交道，每一类人关心的事不同，沟通方式也不同：</p>
 
   <div class="table-wrap">
     <table>
       <tr>
         <th>沟通对象</th>
         <th>他们关心什么</th>
-        <th>你的沟通要点</th>
+        <th>怎么沟通</th>
       </tr>
       <tr>
         <td><strong>面试官</strong><br><span style="font-size:0.8125rem;color:var(--text-muted);">技术/业务</span></td>
@@ -422,82 +388,72 @@
       <tr>
         <td><strong>候选人</strong></td>
         <td>这个机会<br>对自己有什么价值</td>
-        <td>你不是客服，你是公司在候选人面前的第一个面孔。回复及时、信息准确、有温度但不过度承诺</td>
+        <td>你不是客服，是公司面对候选人的第一个面孔。回复及时、信息准确、有温度但不过度承诺</td>
       </tr>
       <tr>
         <td><strong>HRBP / Leader</strong></td>
         <td>招聘进展<br>卡点在哪<br>数据趋势</td>
-        <td>别说「做了多少」，说「效果怎么样」。比如不是「这周沟通了50个候选人」，是「这周调整了Boss直聘的打招呼话术后，回复率从12%涨到18%」</td>
+        <td>不要说「做了多少」，要说「效果怎么样」。比如不是「这周沟通了50个候选人」，是「调整了Boss直聘的打招呼话术后，回复率从12%涨到18%」</td>
       </tr>
     </table>
   </div>
 
   <h3>3. 数据是你的武器，不是你交差的工具</h3>
 
-  <p>招聘运营最特别的地方——<strong>你手上天然有数据</strong>。每个岗位的转化漏斗、每个渠道的效率、每个面试官的反馈速度，都在你眼前。</p>
+  <p>招聘运营最特别的地方——<strong>你手上天然有数据</strong>。每个岗位的转化漏斗、每个渠道的效率、每个面试官的反馈速度。</p>
 
-  <p>新人最容易做的就是「拉个数发过去」。但真正让你拉开差距的是：</p>
+  <p>新人最容易做的就是「拉个数发过去」。但真正拉开差距的是：</p>
 
   <div class="card card-blue">
-    <p style="margin:0;">你能不能从数据里看出一个<strong>具体的可以改进的点</strong>？</p>
+    <p style="margin:0;">能不能从数据里看出<strong>一个具体可以改进的点</strong>？</p>
     <p style="margin:0.5rem 0 0 0;">能不能把「感觉这个渠道不好」变成「这个渠道的简历到面试转化率比另一个渠道低 40%，建议调整 JD 关键词或暂停投放」？</p>
   </div>
 
-  <p style="margin-top:1rem;">这个能力练出来，你的角色就从<strong>「协助招聘的人」</strong>变成<strong>「优化招聘系统的人」</strong>——这是完全不同的职业路径。</p>
+  <p style="margin-top:1rem;">这个能力练出来，角色就从<strong>「协助招聘的人」</strong>变成<strong>「优化招聘系统的人」</strong>。</p>
 
   <h3>4. 不要把忙当成价值</h3>
 
   <p>运营最怕一句话：「我最近好忙啊，事情特别多」。</p>
 
-  <p>反问自己一个残酷但有用的问题：</p>
+  <p>反问自己一个有用的问题：</p>
 
   <blockquote>
     <p>如果你手上的某件事停掉一周，有没有人会注意到？</p>
   </blockquote>
 
-  <p>如果答案是不会——这件事就要么优化掉，要么重新定义它。你的目标不是填满时间，是在有限的时间里做出别人能感知到的效果。</p>
+  <p>如果答案是不会——这件事就要么优化掉，要么重新定义它。目标不是填满时间，是在有限的时间里做出别人能感知到的效果。</p>
 </section>
 
 <hr>
 
 <!-- ===== PRACTICE ===== -->
 <section>
-  <h2>第三部分：给你的一个练习</h2>
+  <h2>一个练习</h2>
 
   <p>接下来两周，每天下班前花 5 分钟，在飞书文档里记三行：</p>
 
   <div class="practice-box">
     <pre>今天接的一个重要任务：
-→ 我做之前理解的 WHY 是什么？做完后实际效果符合预期吗？
+→ 做之前理解的 WHY 是什么？做完后效果符合预期吗？
 
-今天我沟通的一个人（面试官/候选人/协作方）：
-→ 我有没有站在对方的角度想他要什么？
+今天沟通的一个人（面试官 / 候选人 / 协作方）：
+→ 有没有站在对方的角度想他要什么？
 
 今天有一件事：
 → 如果不做会怎样？</pre>
   </div>
 
-  <p>不用写很长，三行就行。两周后回头看，你会发现有些东西悄无声息地变了。</p>
-</section>
-
-<hr>
-
-<!-- ===== CLOSING ===== -->
-<section>
-  <p>公司招校招生，不是因为你们便宜。</p>
-  <p>是因为你们还没有被「这套流程就是这样」同化，<strong>你们有本能去问「为什么」</strong>。</p>
+  <p>不用写很长，三行就行。两周后回头看，会发现有些东西变了。</p>
 
   <blockquote>
-    <p>别把这个本能丢了。它才是你最值钱的东西。</p>
+    <p>公司招校招生，不是因为便宜。是因为你还没被「这套流程就是这样」同化，你还有本能去问「为什么」。别把这个本能丢了，它才是最值钱的东西。</p>
   </blockquote>
-
-  <p style="margin-top:2rem; color:var(--text-secondary);">随时可以来找我聊，任何你觉得「不知道该不该问」的问题都可以。</p>
 </section>
 
 </main>
 
 <footer>
-  <p>卞卡 · 字节跳动 Data 招聘团队</p>
+  <p>字节跳动 Data 招聘团队 · 2026</p>
 </footer>
 
 </body>
